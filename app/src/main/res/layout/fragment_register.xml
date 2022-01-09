@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragment">
+
+
+    <EditText
+        android:id="@+id/mailRegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:ems="10"
+        android:hint="example@example.com"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/passwordRegisterText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectImageButton" />
+
+    <EditText
+        android:id="@+id/passwordRegisterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="@+id/mailRegisterText"
+        app:layout_constraintTop_toBottomOf="@+id/mailRegisterText" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="147dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:background="@drawable/button_shape"
+        android:onClick="register"
+        android:text="REGISTER"
+        app:layout_constraintBottom_toTopOf="@+id/logintextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegisterText" />
+
+    <TextView
+        android:id="@+id/logintextView"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:hint="Do you have an account? Please login."
+        android:onClick="loginText"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/selectImageButton"
+        android:layout_width="195dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="25dp"
+        android:onClick="selectImage"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toTopOf="@+id/mailRegisterText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="438dp"
+        android:text="Register Page"
+        app:layout_constraintBottom_toTopOf="@+id/logintextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

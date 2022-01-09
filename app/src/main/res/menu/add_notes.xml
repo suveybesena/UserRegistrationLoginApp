@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/adding_note_item" android:title="Create New Note">
+
+    </item>
+    <item android:id="@+id/update_profile_item" android:title="Update Profile" >
+
+    </item>
+</menu>
